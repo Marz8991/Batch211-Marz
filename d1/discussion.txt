@@ -1,0 +1,40 @@
+CLI (Command Line Interface) Commands
+
+ls- list the files and folders contained by the current directory
+
+pwd- present working directory- shows the current folder we are working on
+
+cd <folderName/ path to folder>- change directories- change the current folder/ directory we are currently working on with our CLI(terminal/ gitbash)
+
+mkdir <folderName>- create a new directory
+
+touch <fileName>- used to create files
+
+Sublime Text 3
+	>> a lightweight text/file editor. Sublime text is much more lightweight than VSCode or Visual Studio. It uses less RAM/ Memory which is important because we also, as devs, have our Google Chrome open.
+
+Configure our Git:
+
+git config --global user.email "<emailFromGitlab/Github>"
+	>> this will allow us to identify the account from gitlab or github who will push/ upload files into our online Gitlab or Github services.
+
+git config --global user.name "<usernameFromGitlab/Github"
+	>> this will allow us to identify the name of the user who is trying to upload/ push files into our online Gitlab or Github services. This will also allow to determine the name of the person who uploaded the latest commit/ version in our repo
+
+Pushing for the very first time:
+
+git init- allows us to initialize a local folder as a local git repo. This means that the folder and its files is now tracked by git.
+
+git add . - allows us to add all files and updates into a new commit/ version of our files and folders to be uploaded to our online repo
+
+git commit -m "<commitMessage>"- allows us to create a new version of our files and folders based on the updates added using git add .
+	>> commit messages starts with a verb <added discussion, updated index.html, changed solution>
+	>> at least less than 50 characters
+
+git remote add origin <gitUrlOnlineRepo>- this allows us to connect an online repo to a local repo. "origin" is the default or conventional name for an online repo.
+
+git push origin master- allows us to push/ upload the latest commit created into our online repo that is designated as "origin". master is the branch to upload/ push our commit to. master branch is the default version or the main version of our files in the repo
+
+Pushing updates:
+git add . >> git commit -m "<commitMessage>" >> git push origin master
+
